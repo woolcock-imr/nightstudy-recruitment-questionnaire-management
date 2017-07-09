@@ -1,0 +1,42 @@
+{
+	"name":"Powersleep Recruitment Questionnaire Management",
+	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
+	"parameters":{
+	},
+	"modules":
+	[
+		{
+		   "module_id" : "participant_login_setup",
+		   "table_id":"20010811",
+		   "url" : "https://woolcock-imr.github.io/modules/powersleep-recruitment-questionnaire-management/participant_login_setup.html"
+		}
+		,{
+		   "module_id" : "questionnaire",
+		   "url" : "https://vmiis.github.io/modules/panels/questionnaire.html"
+		}
+	],
+	"panel":
+	{
+		"columns":
+		[
+			{
+				"sections":
+				[
+					{
+						"name":"Modules",
+						"modules":
+						[
+							{
+								"module_id":"participant",
+								"name":"Participant",
+								"table_id":"20010809",
+								"url":"https://woolcock-imr.github.io/modules/powersleep-recruitment-questionnaire-management/participant.html",
+								"counting":"1"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
