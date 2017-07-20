@@ -93,6 +93,97 @@
 								"counting":"1",
 								"quest":"1"
 							}
+
+
+
+							,{
+								"module_id":"Medical_History",
+								"name":"Medical_History",
+								"table_id":"20010785",
+								"url":"/modules/task/medical_history.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Sleep_Disorders_Patterns",
+								"name":"Sleep_Disorders_Patterns",
+								"table_id":"20010786",
+								"url":"/modules/task/Sleep_Disorders_Patterns.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"The_Sleep_Hygiene_Index",
+								"name":"The_Sleep_Hygiene_Index",
+								"table_id":"20010787",
+								"url":"/modules/task/The_Sleep_Hygiene_Index.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Family_Sleep_History",
+								"name":"Family_Sleep_History",
+								"table_id":"20010788",
+								"url":"/modules/task/Family_Sleep_History.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Medications",
+								"name":"Medications",
+								"table_id":"20010789",
+								"url":"/modules/task/Medications.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Recreational_Drugs",
+								"name":"Recreational_Drugs",
+								"table_id":"20010790",
+								"url":"/modules/task/Recreational_Drugs.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Epworth_Sleepiness_Scale",
+								"name":"Epworth_Sleepiness_Scale",
+								"table_id":"20010791",
+								"url":"/modules/task/Epworth_Sleepiness_Scale.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Multivariate_Apnea_Predictor_Questionnaire",
+								"name":"Multivariate_Apnea_Predictor_Questionnaire",
+								"table_id":"20010792",
+								"url":"/modules/task/Multivariate_Apnea_Predictor_Questionnaire.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Insomnia_Severity_Index",
+								"name":"Insomnia_Severity_Index",
+								"table_id":"20010793",
+								"url":"/modules/task/Insomnia_Severity_Index.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Restless_Legs",
+								"name":"Restless_Legs",
+								"table_id":"20010794",
+								"url":"/modules/task/Restless_Legs.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Horne_Ostberg_Morningness_Eveningness_Composite_Questionnaire",
+								"name":"Horne_Ostberg_Morningness_Eveningness_Composite_Questionnaire",
+								"table_id":"20010795",
+								"url":"/modules/task/Horne_Ostberg_Morningness_Eveningness_Composite_Questionnaire.html",
+								"counting":"1",
+								"quest":"1"
+							}
 						]
 					}
 				]
