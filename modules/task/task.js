@@ -4,14 +4,6 @@ var sql_participant=_config.parameters.sql_participant;
 var participant_tid	=$vm.module_list[_ids.participant].table_id;
 var notes_tid		=$vm.module_list[_ids.task_notes].table_id;
 var visit_task=_module.section_name+" - "+_module.name;
-/*
-var config=_mobj.op.sys.config;
-var panel=_mobj.op.panel;
-var site_filter_tid	='';
-//var sql_participant=_config.parameters.sql_participant;
-//var this_module=$vm.vm['__ID'].name;
-//var visit_task=$vm.module_list[this_module].visit_task;
-*/
 //-------------------------------------
 _record_type="s2";
 var _task_fields='';
@@ -62,9 +54,12 @@ var _default_cell_render=function(records,I,field,td,set_value,source){
         case 'Site':
                 records[I].vm_custom[field]=true;
                 break;
-        case 'S3':
+        case 'S2':
             records[I].vm_custom[field]=true;
-            td.html("<span style='color:"+$('<div/>').html(records[I][field]).text()+"'>&#x25cf;</span>");
+			var c=$('<div/>').html(records[I][field]).text();
+			//compatable for old app
+			if(c[0]!='#') c='#'+c;
+			td.html("<span style='color:"+c+"'>&#x25cf;</span>");
             break;
         case 'NT':
             records[I].vm_custom[field]=true;
@@ -100,10 +95,11 @@ _set_req=function(){
 		parent_where=" where uid="+participant_record.UID;
 		site_sql_where='';
 	}
+	//use S2 as status
     var sql="with notes as (select PUID,NT=S1,NC=@('Color'),NRowNum=row_number() over (PARTITION BY PUID order by ID DESC) from [TABLE-"+notes_tid+"] where ppid="+_db_pid+")";
     sql+=",participant as (select Site=S1,ParticipantUID=UID,sql_participant="+sql_participant+" from [TABLE-"+participant_tid+"]"+site_sql_where+parent_where+" )";
-    sql+=",task as (select ID,PID,UID,PUID,S3,Site=participant.Site,Information,sql_participant,DateTime,Author,RowNum=row_number() over (order by ID DESC) from [TABLE-"+_db_pid+"-@S1] join participant on PUID=ParticipantUID)";
-    sql+="select ID,PID,S3,UID,Site,Information,Participant=sql_participant,DateTime,Author,RowNum,NT,NC,dirty=0, valid=1 from task left join notes on UID=notes.PUID and NRowNum=1 where RowNum between @I6 and @I7";
+    sql+=",task as (select ID,PID,UID,PUID,S2,Site=participant.Site,Information,sql_participant,DateTime,Author,RowNum=row_number() over (order by ID DESC) from [TABLE-"+_db_pid+"-@S1] join participant on PUID=ParticipantUID)";
+    sql+="select ID,PID,S2,UID,Site,Information,Participant=sql_participant,DateTime,Author,RowNum,NT,NC,dirty=0, valid=1 from task left join notes on UID=notes.PUID and NRowNum=1 where RowNum between @I6 and @I7";
     var sql_n="with participant as (select Site=S1,ParticipantUID=UID from [TABLE-"+participant_tid+"]"+site_sql_where+" )";
     sql_n+=" select count(ID) from [TABLE-"+_db_pid+"-@S1] join participant on PUID=ParticipantUID";
 
@@ -121,7 +117,9 @@ _set_req_export=function(){
     _req={cmd:'query_records',sql:sql,i6:_from,i7:_to}
 }
 //-------------------------------------
-var _set_status_and_participant=function(record,dbv){    //set status color, PUID=paticipant_uid
+var _set_status_and_participant=function(record,dbv){
+	//use S2 as status
+	//set status color, PUID=paticipant_uid
     var flds=_task_fields.split(',');
     var J=0,K=0,N=flds.length;
     for(var i=0;i<N;i++){
@@ -130,9 +128,9 @@ var _set_status_and_participant=function(record,dbv){    //set status color, PUI
         else if(record[id]==='' || record[id]===undefined || record[id]===null)  J++;
     }
     N=N-K;
-    if(N==J) 		    dbv.S3='#FF0000';
-    else if(J===0)  	dbv.S3='#00FF00';
-    else 			    dbv.S3='#FFCC00';
+    if(N==J) 		    dbv.S2='#FF0000';
+    else if(J===0)  	dbv.S2='#00FF00';
+    else 			    dbv.S2='#FFCC00';
     if(record.Participant===undefined || record.Participant===null || record.Participant==""){
         $vm.alert("No participant was selected");
         return false;

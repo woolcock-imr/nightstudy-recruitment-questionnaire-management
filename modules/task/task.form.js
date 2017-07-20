@@ -2,19 +2,6 @@
 var _ids=_config.module_ids;
 var sql_participant=_config.parameters.sql_participant;
 var participant_tid	=$vm.module_list[_ids.participant].table_id;
-/*
-var config=_mobj.op.sys.config;
-var sql_participant=config.parameters.sql_participant;
-var participant=config.parameters.participant;
-var participant_tid	=$vm.module_list[config.module_ids[participant]].table_id;
-*/
-//-------------------------------------
-/*
-//input needed in module input variables
-var m_var=$vm.module_list[$vm.vm['__ID'].name].var;
-var participant_pid=m_var.participant_tid;
-var sql_participant=m_var.sql_participant;
-*/
 //-------------------------------------
 $('#Participant__ID').autocomplete({
     minLength:0,
