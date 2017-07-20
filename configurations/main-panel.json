@@ -95,7 +95,7 @@
 							}
 							,{
 								"module_id":"Medical_History",
-								"name":"Medical_History",
+								"name":"Medical History",
 								"table_id":"20010785",
 								"url":"/modules/task/medical_history.html",
 								"counting":"1",
@@ -103,7 +103,7 @@
 							}
 							,{
 								"module_id":"Sleep_Disorders_Patterns",
-								"name":"Sleep_Disorders_Patterns",
+								"name":"Sleep Disorders Patterns",
 								"table_id":"20010786",
 								"url":"/modules/task/Sleep_Disorders_Patterns.html",
 								"counting":"1",
@@ -111,7 +111,7 @@
 							}
 							,{
 								"module_id":"The_Sleep_Hygiene_Index",
-								"name":"The_Sleep_Hygiene_Index",
+								"name":"The Sleep Hygiene Index",
 								"table_id":"20010787",
 								"url":"/modules/task/The_Sleep_Hygiene_Index.html",
 								"counting":"1",
@@ -119,7 +119,7 @@
 							}
 							,{
 								"module_id":"Family_Sleep_History",
-								"name":"Family_Sleep_History",
+								"name":"Family Sleep History",
 								"table_id":"20010788",
 								"url":"/modules/task/Family_Sleep_History.html",
 								"counting":"1",
@@ -135,7 +135,7 @@
 							}
 							,{
 								"module_id":"Recreational_Drugs",
-								"name":"Recreational_Drugs",
+								"name":"Recreational Drugs",
 								"table_id":"20010790",
 								"url":"/modules/task/Recreational_Drugs.html",
 								"counting":"1",
@@ -143,7 +143,7 @@
 							}
 							,{
 								"module_id":"Epworth_Sleepiness_Scale",
-								"name":"Epworth_Sleepiness_Scale",
+								"name":"Epworth Sleepiness Scale",
 								"table_id":"20010791",
 								"url":"/modules/task/Epworth_Sleepiness_Scale.html",
 								"counting":"1",
@@ -151,7 +151,7 @@
 							}
 							,{
 								"module_id":"Multivariate_Apnea_Predictor_Questionnaire",
-								"name":"Multivariate_Apnea_Predictor_Questionnaire",
+								"name":"Multivariate Apnea Predictor Questionnaire",
 								"table_id":"20010792",
 								"url":"/modules/task/Multivariate_Apnea_Predictor_Questionnaire.html",
 								"counting":"1",
@@ -159,7 +159,7 @@
 							}
 							,{
 								"module_id":"Insomnia_Severity_Index",
-								"name":"Insomnia_Severity_Index",
+								"name":"Insomnia Severity Index",
 								"table_id":"20010793",
 								"url":"/modules/task/Insomnia_Severity_Index.html",
 								"counting":"1",
@@ -167,7 +167,7 @@
 							}
 							,{
 								"module_id":"Restless_Legs",
-								"name":"Restless_Legs",
+								"name":"Restless Legs",
 								"table_id":"20010794",
 								"url":"/modules/task/Restless_Legs.html",
 								"counting":"1",
@@ -175,9 +175,114 @@
 							}
 							,{
 								"module_id":"Horne_Ostberg_Morningness_Eveningness_Composite_Questionnaire",
-								"name":"Horne_Ostberg_Morningness_Eveningness_Composite_Questionnaire",
+								"name":"Horne Ostberg Morningness Eveningness Composite Questionnaire",
 								"table_id":"20010795",
 								"url":"/modules/task/Horne_Ostberg_Morningness_Eveningness_Composite_Questionnaire.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Functional_Outcomes_of_Sleep_Questionnaire",
+								"name":"Functional Outcomes of Sleep Questionnaire",
+								"table_id":"20010796",
+								"url":"/modules/task/Functional_Outcomes_of_Sleep_Questionnaire.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Pittsburgh_Sleep_Quality_Index",
+								"name":"Pittsburgh Sleep Quality Index",
+								"table_id":"20010797",
+								"url":"/modules/task/Pittsburgh_Sleep_Quality_Index.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Patient_Health_Questionnaire",
+								"name":"Patient Health Questionnaire",
+								"table_id":"20010798",
+								"url":"/modules/task/Patient_Health_Questionnaire.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Generalised_Anxiety_Disorder",
+								"name":"Generalised Anxiety Disorder",
+								"table_id":"20010799",
+								"url":"/modules/task/Generalised_Anxiety_Disorder.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Depression_Anxiety_Stress_Scale",
+								"name":"Depression Anxiety Stress Scale",
+								"table_id":"20010800",
+								"url":"/modules/task/Depression_Anxiety_Stress_Scale.html",
+								"counting":"1",
+								"quest":"1"
+							}
+
+							,{
+								"module_id":"Fatigue_Severity_Scale",
+								"name":"Fatigue Severity Scale",
+								"table_id":"20010801",
+								"url":"/modules/task/Fatigue_Severity_Scale.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Sheehan_Disability_Scale",
+								"name":"Sheehan Disability Scale",
+								"table_id":"20010802",
+								"url":"/modules/task/Sheehan_Disability_Scale.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Health_Work_Performance_Questionnaire",
+								"name":"Health Work Performance Questionnaire",
+								"table_id":"20010803",
+								"url":"/modules/task/Health_Work_Performance_Questionnaire.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Shiftwork",
+								"name":"Shiftwork",
+								"table_id":"20010804",
+								"url":"/modules/task/Shiftwork.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Shiftwork_Disorder",
+								"name":"Shiftwork Disorder",
+								"table_id":"20010805",
+								"url":"/modules/task/Shiftwork_Disorder.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Motor_Vehicle_Accidents",
+								"name":"Motor Vehicle Accidents",
+								"table_id":"20010806",
+								"url":"/modules/task/Motor_Vehicle_Accidents.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Workplace_Accidents",
+								"name":"Workplace Accidents",
+								"table_id":"20010807",
+								"url":"/modules/task/Workplace_Accidents.html",
+								"counting":"1",
+								"quest":"1"
+							}
+							,{
+								"module_id":"Thank_You_Page",
+								"name":"Thank You Page",
+								"table_id":"20010808",
+								"url":"/modules/task/Thank_You_Page.html",
 								"counting":"1",
 								"quest":"1"
 							}
