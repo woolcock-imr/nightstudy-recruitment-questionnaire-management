@@ -9,7 +9,7 @@
 		VmInclude:__CURRENT_PATH__/task.js
         //-------------------------------------
         _task_fields="DAS_1,DAS_2,DAS_3,DAS_4,DAS_5,DAS_6,DAS_7,DAS_8,DAS_9,DAS_10,DAS_11,DAS_12,DAS_13,DAS_14,DAS_15,DAS_16,DAS_17,DAS_18,DAS_19,DAS_20,DAS_21,DAS_D,DAS_A,DAS_S";
-        _fields="_Form,Status|S2,Notes|NT,Participant,"+_task_fields;
+        _fields="_Form,Status|S2,Notes|NT,Registration_ID|Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){    _set_req(); _request_data(); })

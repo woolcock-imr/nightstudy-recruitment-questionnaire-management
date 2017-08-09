@@ -9,7 +9,7 @@
 		VmInclude:__CURRENT_PATH__/task.js
         //-------------------------------------
         _task_fields="father_diagnosed,father_OSA,father_insomn,father_narco,father_RLS,father_brux,father_RBD,father_para,father_hypo,father_DSPD,mother_diagnosed,mother_OSA,mother_insomn,mother_narco,mother_RLS,mother_brux,mother_RBD,mother_para,mother_hypo,mother_DSPD";
-        _fields="_Form,Status|S2,Notes|NT,Participant,"+_task_fields;
+        _fields="_Form,Status|S2,Notes|NT,Registration_ID|Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){    _set_req(); _request_data(); })

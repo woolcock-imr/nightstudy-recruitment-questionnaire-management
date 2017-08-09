@@ -9,7 +9,7 @@
 		VmInclude:__CURRENT_PATH__/task.js
         //-------------------------------------
         _task_fields="rec_drugs,marijuana_used,marijuana_how_often,marijuana_latest_use,cocaine_used,cocaine_how_often,cocaine_latest_use,amphetamines_used,amphetamines_how_often,amphetamines_latest_use,hallucinogens_used,hallucinogens_how_often,hallucinogens_latest_use,heroin_used,heroin_how_often,heroin_latest_use,opiates_used,opiates_how_often,opiates_latest_use,inhalants_used,inhalants_how_often,inhalants_latest_use";
-        _fields="_Form,Status|S2,Notes|NT,Participant,"+_task_fields;
+        _fields="_Form,Status|S2,Notes|NT,Registration_ID|Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){    _set_req(); _request_data(); })

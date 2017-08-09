@@ -9,7 +9,7 @@
 		VmInclude:__CURRENT_PATH__/task.js
         //-------------------------------------
         _task_fields="MVA_drive,MVA_accident,accident_vehicle_work,accident_vehicle_nonwork,accident_novehicle_work,accident_novehicle_nonwork,MVAacc_sleep,MVA_nearmiss,nearmiss_vehicle_work,nearmiss_vehicle_nonwork,nearmiss_novehicle_work,nearmiss_novehicle_nonwork,MVAnmiss_sleep,fear_drivesleep,drive_nod,alert_caffeine,alert_radio,alert_air,alert_break,dirve_km,drive_yrs,drive_wkhrs,drive_professional";
-        _fields="_Form,Status|S2,Notes|NT,Participant,"+_task_fields;
+        _fields="_Form,Status|S2,Notes|NT,Registration_ID|Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){    _set_req(); _request_data(); })

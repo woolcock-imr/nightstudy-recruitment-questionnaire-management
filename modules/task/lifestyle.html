@@ -9,7 +9,7 @@
 		VmInclude:__CURRENT_PATH__/task.js
         //-------------------------------------
         _task_fields="general_health,physical_activity,smoke,smoke_regular,smoke_stop,smoke_age,smoke_per_day,alcohol,alcohol_standard_wd,alcohol_standard_nwd,caffeine,caffeine_wd,caffeine_nwd,caffeine_bed_wd,caffeine_bed_nwd";
-        _fields="_Form,Status|S2,Notes|NT,Participant,"+_task_fields;
+        _fields="_Form,Status|S2,Notes|NT,Registration_ID|Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
         $('#D__ID').on('load',function(){    _set_req(); _request_data(); })
