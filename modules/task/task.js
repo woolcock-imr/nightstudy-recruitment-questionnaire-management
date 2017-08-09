@@ -107,7 +107,7 @@ _set_req=function(){
 }
 //-------------------------------------
 _set_req_export=function(){
-    _fields_e="Participant ID|ParticipantUID,Participant,"+_task_fields
+    _fields_e="Record_ID|ParticipantUID,Registration_ID|Participant,"+_task_fields
     var sql="with participant as (select Site=S1,ParticipantUID=UID,sql_participant="+sql_participant+",RowNum=row_number() over (order by ID DESC) from [TABLE-"+participant_tid+"]"+site_sql_where+" )";
     sql+=",task as (select ID,UID,PUID,S3,Information,DateTime,Author from [TABLE-"+_db_pid+"-@S1])";
     sql+=" select ID,ParticipantUID,Site,Information,Participant=sql_participant,DateTime,Author from participant left join task on PUID=ParticipantUID";
