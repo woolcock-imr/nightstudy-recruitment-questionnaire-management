@@ -9,6 +9,8 @@ $(document).ready(function(){
 	var lastChar=path[path.length-1];
 	if(lastChar=='/') path=path.substring(0,path.length-1);
 	$vm.hosting_path=path;
+
+	$vm.module_hosting_path=$vm.hosting_path;
 	//--------------------------------------------------------
 	var start=function(){
 		$vm.trust_path=['https://vmiis.github.io','https://raw.githubusercontent.com/vmiis','https://woolcock-imr.github.io','https://wappsystem.github.io','https://cbs.wappsystem.com','https://rt.woolcock.org.au','https://codepen.io/vmiis'];
