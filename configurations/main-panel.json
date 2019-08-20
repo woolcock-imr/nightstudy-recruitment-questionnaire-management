@@ -1,6 +1,6 @@
 {
 	"name":"Powersleep Recruitment Questionnaire Management",
-	"url":"https://vmiis.github.io/modules/panels/panel.2.html",
+	"url":"/modules/panel.2.html",
 	"parameters":{
 		"sql_participant" : "@('Registration_ID')",
 		"child_configuration_url":"/configurations/child-panel.json"
